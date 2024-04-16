@@ -6,12 +6,8 @@ html {
 }
 
 :root {
-  --color_body: rgb(59, 74, 77);
   --color_accent: rgb(143, 217, 213);
-  --font_4: normal normal normal 22px / normal futura-lt-w01-book,
-    futura-lt-w05-book, sans-serif;
-
-  --le-gris-33: #333;
+  --color_body_text: #333;
   --p9-white: #fdfbfb;
   --black-studio: #0b0b0b;
 }
@@ -192,11 +188,11 @@ html {
   height: 100%;
 }
 body {
-  color: #333;
+  color: var(--color_body_text);
   background-color: var(--p9-white);
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -491,7 +487,7 @@ label {
 
 .w-input,
 .w-select {
-  color: #333;
+  color: var(--color_body_text);
   vertical-align: middle;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -1197,7 +1193,7 @@ textarea.w-select {
 }
 .w-nav-brand {
   float: left;
-  color: #333;
+  color: var(--color_body_text);
   text-decoration: none;
   position: relative;
 }
@@ -1405,8 +1401,8 @@ textarea.w-select {
   }
 }
 body {
-  color: #333;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: var(--color_body_text);
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1441,14 +1437,11 @@ h6 {
   font-weight: 700;
   line-height: 18px;
 }
-p {
-  margin-bottom: 10px;
-}
-a {
+/* a {
   color: #333;
   font-size: 30px;
   text-decoration: none;
-}
+} */
 .utility-page-content {
   text-align: center;
   flex-direction: column;
@@ -1486,7 +1479,7 @@ a {
   display: block;
 }
 .directory-title-text {
-  color: #333;
+  color: var(--color_body_text);
   letter-spacing: 0.4px;
   padding-top: 5px;
   font-family: Open Sans, sans-serif;
@@ -1715,6 +1708,7 @@ a {
   padding-top: 25px;
   padding-left: 0;
   padding-right: 0;
+  font-family: Space Mono, monospace;
   font-size: 22px;
   font-weight: 200;
   display: inline-block;
@@ -2478,7 +2472,7 @@ a {
   border-bottom-color: var(--color_accent);
 }
 .journal-title {
-  color: #333;
+  color: var(--color_body_text);
   text-align: center;
   width: 450px;
   margin-left: auto;
@@ -2525,7 +2519,10 @@ a {
   display: flex;
 }
 .separator {
-  background-image: linear-gradient(#333, #333);
+  background-image: linear-gradient(
+    var(--color_body_text),
+    var(--color_body_text)
+  );
   width: 100px;
   height: 3px;
 }
@@ -3127,7 +3124,7 @@ a {
     color: var(--p9-white);
   }
   .navbar-link.logo {
-    color: var(--le-gris-33);
+    color: var(--color_body_text);
     letter-spacing: 0.3px;
     width: 44vw;
     margin-top: 24px;
@@ -3415,7 +3412,7 @@ a {
     margin-top: -80px;
   }
   .joa-single-title {
-    color: var(--le-gris-33);
+    color: var(--color_body_text);
     letter-spacing: 0.4px;
     margin-bottom: -32px;
     margin-left: 20px;
@@ -3494,7 +3491,7 @@ a {
     color: var(--p9-white);
   }
   .navbar-link-open.logo {
-    color: var(--le-gris-33);
+    color: var(--color_body_text);
     margin-top: 92px;
     font-size: 22px;
     font-weight: 200;
