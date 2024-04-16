@@ -15,14 +15,10 @@ html {
 body {
   margin: 0;
 }
-article,
-aside,
-details,
 figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -31,8 +27,6 @@ summary {
   display: block;
 }
 audio,
-canvas,
-progress,
 video {
   vertical-align: baseline;
   display: inline-block;
@@ -1076,22 +1070,6 @@ textarea.w-select {
 .w-richtext ul {
   overflow: hidden;
 }
-.w-richtext .w-richtext-figure-selected.w-richtext-figure-type-video div:after,
-.w-richtext .w-richtext-figure-selected[data-rt-type="video"] div:after,
-.w-richtext .w-richtext-figure-selected.w-richtext-figure-type-image div,
-.w-richtext .w-richtext-figure-selected[data-rt-type="image"] div {
-  outline: 2px solid #2895f7;
-}
-.w-richtext figure.w-richtext-figure-type-video > div:after,
-.w-richtext figure[data-rt-type="video"] > div:after {
-  content: "";
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 .w-richtext figure {
   max-width: 60%;
   position: relative;
@@ -1121,23 +1099,6 @@ textarea.w-select {
 .w-richtext figure[data-rt-type="image"] > figcaption {
   caption-side: bottom;
   display: table-caption;
-}
-.w-richtext figure.w-richtext-figure-type-video,
-.w-richtext figure[data-rt-type="video"] {
-  width: 60%;
-  height: 0;
-}
-.w-richtext figure.w-richtext-figure-type-video iframe,
-.w-richtext figure[data-rt-type="video"] iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.w-richtext figure.w-richtext-figure-type-video > div,
-.w-richtext figure[data-rt-type="video"] > div {
-  width: 100%;
 }
 .w-richtext figure.w-richtext-align-center {
   clear: both;
