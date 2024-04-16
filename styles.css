@@ -2007,8 +2007,9 @@ h6 {
   margin-top: 15pt;
   margin-bottom: 30pt;
 }
-.resume-text a:hover {
-  color: var(--color_accent);
+.resume-text .resume-ext-link:hover {
+  background-color: var(--color_accent);
+  color: var(--p9-white);
 }
 .resume-text p {
   margin-top: 5pt;
@@ -2175,16 +2176,8 @@ h6 {
   font-weight: 200;
 }
 .contact-email:hover {
-  color: var(--color_accent);
-}
-.email-copy {
-  margin-left: 49px;
-  font-size: 18px;
-  font-weight: 200;
-  text-decoration: underline;
-}
-.email-copy:hover {
-  color: var(--color_accent);
+  background-color: var(--color_accent);
+  color: var(--p9-white);
 }
 .artwork-wrapper,
 .artwork-link {
@@ -2195,10 +2188,10 @@ h6 {
   margin-top: 4px;
   font-size: 18px;
   font-weight: 200;
-  display: block;
 }
 .contact-link:hover {
-  color: var(--color_accent);
+  background-color: var(--color_accent);
+  color: var(--p9-white);
 }
 .contact-link-span {
   font-size: 18px;
