@@ -974,14 +974,18 @@ h6 {
 .text-404 {
   text-align: center;
   letter-spacing: 0.3px;
-  font-family: Open Sans, sans-serif;
+  font-family: Space Mono, monospace;
   font-size: 36px;
   font-weight: 300;
   line-height: 42px;
   display: block;
 }
-.text-404:hover {
-  color: #f44;
+.text-404 a {
+  padding-top: 10pt;
+  font-size: 18px;
+}
+.text-404 a:hover {
+  color: var(--color_accent);
 }
 .text-field {
   text-align: center;
